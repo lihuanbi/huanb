@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>三拱门</title>
+		<link rel="stylesheet" href="css/sangong.css" />
+	</head>
+	<script type="text/javascript">
+			var msg = "  惊艳过我们的这个拱门，静静蕴育着她独特的魅力，在湘大浓厚的文化氛围中独添一份特别的美丽......"　
+			var len = msg.length
+			var seq = 0
+			var speed = 280
+
+			function type() {
+				dazi.innerText = msg.substring(0, seq)
+				if(seq == len) { seq = 0 } else
+					seq++
+					setTimeout("type()", speed)
+			}
+	</script>
+	<body onload="type()">
+		<div id="dazi"></div>
+		<div class="book-back"><img src="img/book.png">
+		<div class="sangong"><img src="img/sangong.png">
+		
+		<div class="san">
+		<img src="img/san.png" />
+		</div>
+		<div class="san2">
+		<img src="img/san-hou.png" />
+		</div>
+		</div>
+		</div>
+	</body>
+</html>

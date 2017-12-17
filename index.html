@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>loading</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="css/loading.css"  />
+		<script type="text/javascript">
+        var num = 0;  
+            var t = setInterval(function(){  
+               num++;  
+               var show = document.getElementById("show");  
+               show.innerText = num;  
+                    if(num==100){  
+                        clearInterval(t); 
+                        window.location.href = "index3.html";
+                    }         
+            },100); 
+            
+             $(document).ready(function(){
+            $('.gong1 img').animate({
+                    marginTop:"0px"
+                },2000); 
+    });
+    $(document).ready(function(){
+            $('.gong2 img').animate({
+                    marginTop:"0px"
+                },4000); 
+    });
+    $(document).ready(function(){
+            $('.gong3 img').animate({
+                    marginTop:"0px"
+                },6000); 
+    });
+		</script>
+	</head>
+	<body>
+		
+		<div class="gong1"><img src="img/g3.png"></div>
+		<div class="gong2"><img src="img/g2.png"></div>
+		<div class="gong3"><img src="img/g2.png"></div>
+		<div class="loading-small"><img src="img/loading.png"></div>
+		<div class="loading-big"><img src="img/load2.png"></div>
+		<div id="show">0</div><div class="sho">%</div>
+	</body>
+</html>

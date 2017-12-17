@@ -1,0 +1,94 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+body{
+	background: url(../img/back-load.jpg);
+}
+
+.gong1{
+	position: absolute;
+    top: 40%;
+    left:550px;
+	width: 12%;
+	height: 90px;
+	align-content: center;
+	overflow: hidden;
+}
+.gong1 img{
+	margin-top:90px ;
+}
+.gong2 img{
+	margin-top:180px ;
+}
+.gong3 img{
+	margin-top:270px ;
+}
+
+.gong2{
+	position: absolute;
+    top: 40%;
+    height: 90px;
+    left: 615px;
+	width: 12%;
+	overflow: hidden;
+	align-content: center;
+}
+
+.gong3{
+	position: absolute;
+    top: 40%;
+    height: 90px;
+    left: 680px;
+	width: 12%;
+	overflow: hidden;
+	align-content: center;
+}
+
+.loading-small{
+	position: absolute;
+    top: 56%;
+    left: 580px;
+	width: 36%;
+	align-content: center;
+}
+
+.loading-big{
+	position: absolute;
+    top: 56%;
+    left: 660px;
+	width: 8%;
+	height: 8%;
+	align-content: center;
+}
+
+.loading-big img{
+	animation: loading 1s infinite step-start backwards;
+       -moz-animation: loading 1s infinite step-start backwards;
+    -webkit-animation: loading 1s infinite step-start backwards;
+}
+
+.sho{
+	font-size: 3em;
+	color: #fff;
+	font-family: Broadway;
+	position: absolute;
+    top: 62%;
+    left: 680px;
+}
+
+#show{
+	font-size: 3em;
+	color: #fff;
+	font-family: Broadway;
+	position: absolute;
+    top: 62%;
+    left: 570px;
+}
+
+@keyframes loading{
+	0%{width: 20%;}
+	50%{width: 23%;}
+	100%{width: 20%;}
+}

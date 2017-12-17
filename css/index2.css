@@ -1,0 +1,99 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+body{
+	animation: fade-in;
+    animation-duration: 5s;  
+	width: 100%;
+	background: url(../img/back-load.jpg);
+}
+
+.book{
+   width: 25%;
+   margin-top: 10%;
+   
+}
+.book img{
+	width: 100%;
+}
+
+.jiant{
+	width: 10%;
+	position: absolute;
+	right: 10%;
+	top: 30%;
+	animation: loading 1.3s infinite step-start backwards;
+       -moz-animation: loading 1s infinite step-start backwards;
+    -webkit-animation: loading 1s infinite step-start backwards;
+	}
+
+.jiant img{
+	width:100%;
+	
+}
+
+.jiant:hover{
+	text-decoration: none;
+	position: absolute;
+	right: 20px;
+	top: 30%;
+}
+
+#biankuang{
+	width: 7%;
+	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0%;
+	float: left;
+}
+
+#biankuang img{
+	width: 100%;
+	height: 100%;
+}
+
+.jingyu{
+	width: 100%;
+	position: absolute;
+	top: 5%;
+	left: 0%;
+}
+
+.shuimu{
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	left: 0%;
+}
+
+.jingyu-zi{
+	position: absolute;
+	top: 10%;
+	left: 100%;
+	display: none;
+}
+
+.shuimu-zi{
+	position: absolute;
+	top: 40%;
+	left:100%;
+	display: none;
+}
+
+@keyframes fade-in {  
+    0% {opacity: 0;}
+    20% {opacity: 0.2;}
+    40% {opacity: 0.4;}
+    60% {opacity: 0.6;}
+    80% {opacity: 0.8;}
+    100% {opacity: 1;}
+} 
+
+@keyframes loading{
+	0%{right: 10%;}
+	50%{right: 12%;}
+	100%{right: 10%;}
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>画眉谭</title>
+        <link rel="stylesheet" href="css/huam.css" />
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+      <script type="text/javascript">
+			var msg = "  惊艳过我们的这片幽潭，静静蕴育着她独特的魅力，在湘大浓厚的文化氛围中独添一份特别的美丽......"　
+			var len = msg.length
+			var seq = 0
+			var speed = 280
+
+			function type() {
+				dazi.innerText = msg.substring(0, seq)
+				if(seq == len) { seq = 0 } else
+					seq++
+					setTimeout("type()", speed)
+			}
+		</script>
+    </head>
+        <body onload="type()">
+        	<div id="dazi"></div>
+        	<a href="sangong.html">	<div class="book-back">
+        	<img src="img/book.png" />
+        		<div class="pain">
+        			<img src="img/huam.png" />
+        		</div></a>
+        	</div>
+        </body>
+</html>

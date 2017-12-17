@@ -1,0 +1,69 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+body{
+	background: url(../img/back-load.jpg);
+	animation: fade-in;
+    animation-duration: 5s; 
+}
+
+#dazi{
+	width: 30%;
+	line-height: 40px;
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	color: #FFFFFF;
+}
+.book-back{
+	width: 60%;
+	height: 800px;
+	margin-top:15% ;
+}
+
+.book-back img{
+	width: 100%;
+}
+
+.sangong{
+	width: 80%;
+	height: 800px;
+	position: relative;
+	margin-top:-55.7% ;
+	margin-left:9.6% ;
+}
+
+.san{
+	width: 80%;
+	position: relative;
+	margin-top:-65.7% ;
+	margin-left:9.6% ;
+	overflow: hidden;
+
+}
+
+.san2{
+	width: 68%;
+	position: relative;
+	margin-top:-28.7% ;
+	margin-left:14.6% ;
+	overflow: hidden;
+
+}
+
+
+@keyframes loading{
+	0%{transform: rotateX(0deg);}
+	100%{transform: rotateX(-90deg);}
+}
+
+@keyframes fade-in {  
+    0% {opacity: 0;}
+    20% {opacity: 0.2;}
+    40% {opacity: 0.4;}
+    60% {opacity: 0.6;}
+    80% {opacity: 0.8;}
+    100% {opacity: 1;}
+} 
